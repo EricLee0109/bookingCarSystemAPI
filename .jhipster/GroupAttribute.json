@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20230614053031",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "group_attribute",
+  "fields": [
+    {
+      "fieldName": "groupAttributeName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "displayIndex",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "GroupAttribute",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "attribute",
+      "otherEntityRelationshipName": "groupattribute",
+      "relationshipName": "groupattribute",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

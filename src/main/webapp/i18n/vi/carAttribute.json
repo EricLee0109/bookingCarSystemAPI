@@ -1,0 +1,26 @@
+{
+  "bookingCarApiApp": {
+    "carAttribute": {
+      "home": {
+        "title": "Car Attributes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Car Attribute",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Car Attribute",
+        "notFound": "No Car Attributes found"
+      },
+      "created": "Một Car Attribute mới được tạo với định danh {{ param }}",
+      "updated": "Một Car Attribute cập nhật với định danh {{ param }}",
+      "deleted": "Một Car Attribute đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Car Attribute {{ id }}?"
+      },
+      "detail": {
+        "title": "Car Attribute"
+      },
+      "id": "ID",
+      "attributeValue": "Attribute Value",
+      "attribute": "Attribute",
+      "car": "Car"
+    }
+  }
+}

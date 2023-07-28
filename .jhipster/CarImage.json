@@ -1,0 +1,35 @@
+{
+  "applications": "*",
+  "changelogDate": "20230614053037",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "car_image",
+  "fields": [
+    {
+      "fieldName": "imageDescription",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "carImageUrl",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "CarImage",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "car",
+      "otherEntityRelationshipName": "image",
+      "relationshipName": "car",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}

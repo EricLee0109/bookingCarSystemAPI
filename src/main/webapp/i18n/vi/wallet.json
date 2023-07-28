@@ -1,0 +1,25 @@
+{
+  "bookingCarApiApp": {
+    "wallet": {
+      "home": {
+        "title": "Wallets",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Wallet",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Wallet",
+        "notFound": "No Wallets found"
+      },
+      "created": "Một Wallet mới được tạo với định danh {{ param }}",
+      "updated": "Một Wallet cập nhật với định danh {{ param }}",
+      "deleted": "Một Wallet đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Wallet {{ id }}?"
+      },
+      "detail": {
+        "title": "Wallet"
+      },
+      "id": "ID",
+      "balance": "Balance",
+      "transaction": "Transaction"
+    }
+  }
+}

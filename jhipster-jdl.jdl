@@ -1,0 +1,124 @@
+
+entity GroupAttribute {
+	GroupAttributeName String required,
+    DisplayIndex Integer required
+}
+
+entity Attribute {
+	AttributeName String required,
+    DisplayIndex Long required
+}
+
+entity CarAttribute {
+	AttributeValue String required
+}
+
+entity Car {
+	LicensePlate String required
+	Price Long required
+	Name String required
+	Status String required
+}
+
+entity CarModel {
+	CarModelName String required,
+	Type String required,
+	YearOfManufacture LocalDate required
+}
+
+
+entity Brand {
+	/**
+	* The firstname attribute.
+	*/
+	Name String required,
+	LogoUrl String required,
+}
+
+entity CarImage {
+	ImageDescription String required,
+	CarImageUrl String required
+}
+
+entity ShowRoom {
+	Address String required,
+	Area String required,
+}
+
+entity Wallet {
+    Balance Long required,
+}
+
+entity Transaction {
+	IssueDate LocalDate required,
+    Amount Long required,
+}
+
+
+entity Customer {
+	Phone String required
+}
+
+entity Booking {
+	TimeSlot Integer required,
+    Date LocalDate required
+}
+
+entity Employee {
+	Phone String required
+    Gender String required,
+    ImageUrl String required
+}
+
+relationship OneToMany {
+	GroupAttribute{groupattribute} to Attribute{groupattribute(GroupAttributeName) required}
+}
+
+relationship OneToMany {
+	Attribute to CarAttribute{attribute(AttributeName) required},
+}
+relationship OneToMany {
+	Car{carattribute} to CarAttribute{car(Name) required}
+}
+
+
+relationship OneToMany {
+	ShowRoom{car} to Car{showroom required},
+}
+relationship OneToMany {
+	ShowRoom{employee} to Employee{showroom(Address) required}
+}
+relationship OneToMany {
+	Customer{car} to Car{customer required},
+}
+relationship OneToMany {
+	Employee{car} to Car{employee required},
+}
+relationship OneToMany {
+	CarModel{car} to Car{carmodel required}
+}
+relationship OneToMany {
+	Brand{carmodel(CarModelName)} to CarModel{brand(Name) required}
+}
+
+relationship OneToMany {
+	Car{image}  to CarImage{car(Name) required}
+}
+
+relationship OneToMany {
+	Wallet to Transaction
+}
+
+relationship ManyToOne {
+	Booking{employee required} to Employee
+    Booking{car required} to Car
+    Booking{customer required} to Customer
+}
+
+relationship OneToOne {
+  Customer{user(login) required} to User
+  Employee{user(login) required} to User
+}
+
+service all with serviceClass
+

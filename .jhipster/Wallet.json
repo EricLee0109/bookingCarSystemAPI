@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20230614053039",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "wallet",
+  "fields": [
+    {
+      "fieldName": "balance",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Wallet",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "transaction",
+      "otherEntityRelationshipName": "wallet",
+      "relationshipName": "transaction",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

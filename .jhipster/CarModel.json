@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20230614053035",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "car_model",
+  "fields": [
+    {
+      "fieldName": "carModelName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "yearOfManufacture",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "Task entity.\\n@author The JHipster team.",
+  "jpaMetamodelFiltering": false,
+  "name": "CarModel",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "car",
+      "otherEntityRelationshipName": "carmodel",
+      "relationshipName": "car",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "brand",
+      "otherEntityRelationshipName": "carmodel",
+      "relationshipName": "brand",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}

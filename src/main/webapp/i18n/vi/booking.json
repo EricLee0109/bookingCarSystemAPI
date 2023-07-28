@@ -1,0 +1,28 @@
+{
+  "bookingCarApiApp": {
+    "booking": {
+      "home": {
+        "title": "Bookings",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Booking",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Booking",
+        "notFound": "No Bookings found"
+      },
+      "created": "Một Booking mới được tạo với định danh {{ param }}",
+      "updated": "Một Booking cập nhật với định danh {{ param }}",
+      "deleted": "Một Booking đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Booking {{ id }}?"
+      },
+      "detail": {
+        "title": "Booking"
+      },
+      "id": "ID",
+      "timeSlot": "Time Slot",
+      "date": "Date",
+      "employee": "Employee",
+      "car": "Car",
+      "customer": "Customer"
+    }
+  }
+}

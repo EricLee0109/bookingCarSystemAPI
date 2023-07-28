@@ -1,0 +1,26 @@
+{
+  "bookingCarApiApp": {
+    "carImage": {
+      "home": {
+        "title": "Car Images",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Car Image",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Car Image",
+        "notFound": "No Car Images found"
+      },
+      "created": "Một Car Image mới được tạo với định danh {{ param }}",
+      "updated": "Một Car Image cập nhật với định danh {{ param }}",
+      "deleted": "Một Car Image đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Car Image {{ id }}?"
+      },
+      "detail": {
+        "title": "Car Image"
+      },
+      "id": "ID",
+      "imageDescription": "Image Description",
+      "carImageUrl": "Car Image Url",
+      "car": "Car"
+    }
+  }
+}

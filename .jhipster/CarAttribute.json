@@ -1,0 +1,38 @@
+{
+  "applications": "*",
+  "changelogDate": "20230614053033",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "car_attribute",
+  "fields": [
+    {
+      "fieldName": "attributeValue",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "CarAttribute",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "attributeName",
+      "otherEntityName": "attribute",
+      "otherEntityRelationshipName": "carAttribute",
+      "relationshipName": "attribute",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "car",
+      "otherEntityRelationshipName": "carattribute",
+      "relationshipName": "car",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,26 @@
+{
+  "bookingCarApiApp": {
+    "transaction": {
+      "home": {
+        "title": "Transactions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Transaction",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Transaction",
+        "notFound": "No Transactions found"
+      },
+      "created": "Một Transaction mới được tạo với định danh {{ param }}",
+      "updated": "Một Transaction cập nhật với định danh {{ param }}",
+      "deleted": "Một Transaction đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Transaction {{ id }}?"
+      },
+      "detail": {
+        "title": "Transaction"
+      },
+      "id": "ID",
+      "issueDate": "Issue Date",
+      "amount": "Amount",
+      "wallet": "Wallet"
+    }
+  }
+}

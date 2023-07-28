@@ -1,0 +1,27 @@
+{
+  "bookingCarApiApp": {
+    "showRoom": {
+      "home": {
+        "title": "Show Rooms",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Show Room",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Show Room",
+        "notFound": "No Show Rooms found"
+      },
+      "created": "Một Show Room mới được tạo với định danh {{ param }}",
+      "updated": "Một Show Room cập nhật với định danh {{ param }}",
+      "deleted": "Một Show Room đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Show Room {{ id }}?"
+      },
+      "detail": {
+        "title": "Show Room"
+      },
+      "id": "ID",
+      "address": "Address",
+      "area": "Area",
+      "car": "Car",
+      "employee": "Employee"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "applications": "*",
+  "changelogDate": "20230614053032",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "attribute",
+  "fields": [
+    {
+      "fieldName": "attributeName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "displayIndex",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Attribute",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "carAttribute",
+      "otherEntityRelationshipName": "attribute",
+      "relationshipName": "carAttribute",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "groupAttributeName",
+      "otherEntityName": "groupAttribute",
+      "otherEntityRelationshipName": "groupattribute",
+      "relationshipName": "groupattribute",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}
